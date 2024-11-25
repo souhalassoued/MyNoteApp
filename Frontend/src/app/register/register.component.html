@@ -1,0 +1,21 @@
+<div class="container-fluid">
+<p>welcom</p>
+<p>register works!</p>
+<div class="row d-flex justify-content center">
+    <button type="button" class="btn btn-link" (click)="GoToUser()">Go To User</button>
+</div>
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>name</th>
+            <th>code</th>
+            <th>country</th>
+        </tr>
+        <tr *ngFor="let item of dataList">
+            <td>{{item.name}}</td>
+            <td>{{item.code}}</td>
+            <td>{{item.country}}</td>
+        </tr>
+    </table>
+</div>
+</div>
