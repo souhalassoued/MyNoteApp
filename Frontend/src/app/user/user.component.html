@@ -1,0 +1,21 @@
+<button type="button" class="btn btn-danger"(click)="getmessage()">save</button>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card ">
+            <div class="card-header">
+              <h1 class="text-center">two way Blinding</h1> 
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" [(ngModel)]="message" >
+                <b class="text-danger">{{message}}</b> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-flex justify-content center">
+    <button type="button" class="btn btn-link" (click)="GoToRegister()">Go To Register</button>
+</div>
+<div>
+    <qr-code [value]="'my data" [size]=100></qr-code>
+</div>
+
